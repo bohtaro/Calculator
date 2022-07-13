@@ -26,7 +26,7 @@ public class Main {
                 numberOne = Integer.parseInt(block[0]);
                 numberTwo = Integer.parseInt(block[2]);
                 result =  Integer.toString(toResult(block[1], numberOne, numberTwo ));
-            } else {throw new Exception("Введены некоретные данные!");}
+            } else {throw new Exception("т.к. используются одновременно разные системы счисления");}
 
         return result;
     }
