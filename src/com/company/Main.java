@@ -87,7 +87,7 @@ public class Main {
         return isCorrectNum;
     }
     public static String numToRoman (int numArabian) throws Exception {
-        if(numArabian < 1){ throw new Exception("Результат для римских цифр не может быть меньше 1!"); }
+        if(numArabian < 1){ throw new Exception("т.к. в римской системе нет отрицательных чисел"); }
         String[] roman = {"O", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
                 "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL",
                 "XLI", "XLII", "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII", "LVIII", "LIX", "LX",
