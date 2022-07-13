@@ -16,7 +16,7 @@ public class Main {
         int numberTwo;
         String[] block = input.split(" ");
         String result = "";
-        if (block.length != 3){throw new Exception("Введены некоректные данные!");}
+        if (block.length != 3){throw new Exception("т.к. формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");}
 
             if (isRoman(block[0]) && isRoman(block[2])) {
                 numberOne = romanToArabian(block[0]);
@@ -26,7 +26,7 @@ public class Main {
                 numberOne = Integer.parseInt(block[0]);
                 numberTwo = Integer.parseInt(block[2]);
                 result =  Integer.toString(toResult(block[1], numberOne, numberTwo ));
-            } else {throw new Exception("т.к. используются одновременно разные системы счисления");}
+            } else {throw new Exception("//т.к. используются одновременно разные системы счисления");}
 
         return result;
     }
@@ -51,7 +51,7 @@ public class Main {
                 return 9;
             } else if (roman.equals("X")) {
                 return 10;
-            } else {throw new Exception("Введены некоретные данные!");}
+            } else {throw new Exception("//Введены некоретные данные!");}
     }
     public static int toResult(String str, int numberOne, int numberTwo){
         int result = 0;
